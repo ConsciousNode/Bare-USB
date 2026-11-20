@@ -1,0 +1,11 @@
+const R = process.argv[2] + '/src/';
+const { GateSimulator } = require(R + 'simulator'); const { buildSieNetlist } = require(R + 'netlist');
+const { ClosedBoxPinHarness } = require(R + 'pin-harness'); const { UsbLineModel } = require(R + 'line-model');
+const D = require(R + 'devices'); const { UsbHostDriver } = require(R + 'driver');
+const sim = new GateSimulator({ delayCorner: 'min' }); buildSieNetlist(sim, {}); const line = new UsbLineModel(); const d = new D.LowSpeedHidKeyboardDevice({ seed: 42 });
+line.attachDevice(d); const h = new ClosedBoxPinHarness(sim, line, {}); h.reset(); const drv = new UsbHostDriver(h);
+console.log('enum', drv.enumerateDevice(1).ok); const k = drv.readHidKeystrokes(1, 100); const exp = D.generateScriptedKeystrokes(100, 42);
+const hex = a => Buffer.from(a).toString('hex');
+const expIdx = r => exp.findIndex(e => hex(e) === hex(r));
+for (let i = 0; i < 100; i++) if (hex(k.reports[i]) !== hex(exp[i])) console.log(`report ${i}: got ${hex(k.reports[i])} (= expected #${expIdx(k.reports[i])}) want ${hex(exp[i])}`);
+console.log('device reportIndex at end', d.reportIndex, 'retries', drv.totalRetries);

@@ -1,0 +1,1 @@
+SOF_1MS_TICK rising-edge spacing in CLK_48M cycles: 48000 (USB FS frame = 48000 at 48 MHz)

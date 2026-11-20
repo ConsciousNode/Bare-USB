@@ -1,0 +1,2 @@
+U93_TX_BYTE_LAT  missing nets: TX_LAT0,TX_LAT1,TX_LAT2,TX_LAT3,TX_LAT4,TX_LAT5,TX_LAT6,TX_LAT7 
+declared qNets 111 nonexistent 8

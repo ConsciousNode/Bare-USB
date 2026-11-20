@@ -1,0 +1,13 @@
+Wrote 10 records to /tmp/busb/run/results.jsonl in 67451 ms (allPassed=true)
+  [Test 1] PASS — Differential (Gate-Level SIE vs Reference SIE)
+  [Test 2] PASS — Corners (Min/Max Gate Delays & USB Spec Clock Tolerance Limits)
+  [Test 3] PASS — Enumeration (FS Mass-Storage 64 KB File & LS HID Keyboard 100 Keystrokes)
+  [Test 4] PASS — Positive Controls That Must Fail (5 Netlist Mutants)
+  [Test 5] PASS — Error Injection (Corrupted CRC16, Bit-Stuff Error, Dropped Handshake -> Retry & Recover)
+  [Test 6] PASS — CPU Budget (Register Accesses per Transfer & CPU Time per 1 ms Frame at 10 µs/access)
+  [Test 7] PASS — Static Scan (No Forbidden Parts & Simulator Module Isolation)
+  [Test 8] PASS — Determinism (Fixed Seeds Produce Byte-Identical Wire & Register Traces)
+
+real	1m7.510s
+user	1m7.026s
+sys	0m0.276s

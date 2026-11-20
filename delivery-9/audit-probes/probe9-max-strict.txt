@@ -1,0 +1,142 @@
+probe9 max: endpoints with any path > 1 cycle (excluding 0 declared-async): 99; consistent MCPs: 53
+
+## MCP but undeclared source: 44
+  U08_NRZI_FF.NRZI_TX_D_EN  worst 80.5 ns  hold=true en=true  undeclared: U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2,U93_TX_BYTE_LAT:TX_LAT_D3
+  U11_STUFF_CNT.STUFF_LOAD_N  worst 80.4 ns  hold=true en=true  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2
+  U11_STUFF_CNT.STUFF_CNT_EN  worst 71.1 ns  hold=true en=true  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2
+  U11_STUFF_CNT.STUFF_CNT_EN  worst 71.1 ns  hold=true en=true  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2
+  U208_CRC_FB_FF.CRC16_FB  worst 62.3 ns  hold=false en=false  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2
+  U208_CRC_FB_FF.CRC5_FB  worst 62.3 ns  hold=false en=false  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U93_TX_BYTE_LAT:TX_LAT_D0,U93_TX_BYTE_LAT:TX_LAT_D1,U93_TX_BYTE_LAT:TX_LAT_D2
+  U93_TX_BYTE_LAT.TX_LAT_DIN0  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN1  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN2  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN3  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN4  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN5  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN6  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U93_TX_BYTE_LAT.TX_LAT_DIN7  worst 61.2 ns  hold=true en=true  undeclared: U154_RX_WE_FF:RX_WE_DONE
+  U216_FSM_LUT_REG.XFER_DONE_GATED  worst 54.6 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U34_FSM_STATE.FSM_DIN4  worst 52.5 ns  hold=true en=true  undeclared: U140_ERR_LAT_FF2:SOF_ACTIVE,U215_ACT_SEL_FF:IS_SOF_XFER
+  U34_FSM_STATE.FSM_DIN5  worst 52.5 ns  hold=true en=true  undeclared: U140_ERR_LAT_FF2:SOF_ACTIVE,U215_ACT_SEL_FF:IS_SOF_XFER
+  U216_FSM_LUT_REG.NXT_S0_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.NXT_S1_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.NXT_S2_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.NXT_S3_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.TX_OE_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.CTRL_RX_EN_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U216_FSM_LUT_REG.CTRL_TURN_EN_RAW  worst 50.5 ns  hold=false en=false  undeclared: U139_ERR_LAT_FF:ERR_CRC_LAT,U139_ERR_LAT_FF:ERR_TIMEOUT_LAT,U140_ERR_LAT_FF2:ERR_STUFF_LAT,U140_ERR_LAT_FF2:SOF_ACTIVE
+  U97_RDLEN_D1.RDL1_D0  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D1  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D2  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D3  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D4  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D5  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D6  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U97_RDLEN_D1.RDL1_D7  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D0  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D1  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D2  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D3  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D4  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D5  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D6  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U98_RDLEN_D2.RDL2_D7  worst 36.3 ns  hold=true en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U76_LEN_CNT_LO.BCNT_ADV_EN  worst 34.9 ns  hold=false en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U77_LEN_CNT_HI.BCNT_ADV_EN  worst 34.9 ns  hold=false en=true  undeclared: U164_EN_REG:TX_BIT_EN,U164_EN_REG:RX_SAMPLE_EN,U215_ACT_SEL_FF:ACTIVE_CLK_SEL
+  U209_CRC_CHK_PIPE_FF.CRC_CHK_EN  worst 28.8 ns  hold=false en=true  undeclared: U201_SE0_SYNC2:SE0_NOW
+  U140_ERR_LAT_FF2.ERR_STUFF_D_MUX  worst 23.5 ns  hold=true en=true  undeclared: U04_DPLL_EDGE_FF:RCV_D2,U216_FSM_LUT_REG:CTRL_RX_EN
+
+## MCP consistent: 53
+  U22_BIT_CNT.BIT_CNT_LOAD_N  worst 53.2 ns  hold=true en=true
+  U139_ERR_LAT_FF.ERR_CRC_D_MUX  worst 39.2 ns  hold=true en=false
+  U115_ACK_PHASE_CNT.ACK_PHASE_EN  worst 37.0 ns  hold=true en=true
+  U115_ACK_PHASE_CNT.ACK_PHASE_EN  worst 37.0 ns  hold=true en=true
+  U13_CRC5_FF0.CRC5_D0_IN  worst 34.5 ns  hold=true en=true
+  U13_CRC5_FF0.CRC5_D1_IN  worst 34.5 ns  hold=true en=true
+  U14_CRC5_FF1.CRC5_D2_IN  worst 34.5 ns  hold=true en=true
+  U14_CRC5_FF1.CRC5_D3_IN  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN0  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN1  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN2  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN3  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN4  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN5  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN6  worst 34.5 ns  hold=true en=true
+  U17_CRC16_LO.CRC16_DIN7  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN8  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN9  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN10  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN11  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN12  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN13  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN14  worst 34.5 ns  hold=true en=true
+  U18_CRC16_HI.CRC16_DIN15  worst 34.5 ns  hold=true en=true
+  U15_CRC5_FF2.CRC5_D4_IN  worst 33.1 ns  hold=true en=true
+  U73_EOP_CNT.EOP_CNT_EN  worst 32.6 ns  hold=false en=true
+  U73_EOP_CNT.EOP_CNT_EN  worst 32.6 ns  hold=false en=true
+  U121_STUFF_LAT_FF.LAT_PID_NOW_D  worst 32.2 ns  hold=true en=true
+  U207_CRC_EN_PIPE_FF.CRC16_EN_GATED  worst 31.9 ns  hold=false en=true
+  U210_CRC5_EN_PIPE_FF.CRC5_EN_GATED  worst 31.9 ns  hold=false en=true
+  U92_LAST_PID_REG.LPID_DIN7  worst 30.5 ns  hold=true en=true
+  U121_STUFF_LAT_FF.IS_EOP_PIPE_D  worst 29.6 ns  hold=true en=true
+  U59_ACK_DLY_CNT.ACK_DLY_EN  worst 29.1 ns  hold=false en=true
+  U59_ACK_DLY_CNT.ACK_DLY_EN  worst 29.1 ns  hold=false en=true
+  U21_RX_SR.RX_SR_D0  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D1  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D2  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D3  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D4  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D5  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D6  worst 28.1 ns  hold=true en=true
+  U21_RX_SR.RX_SR_D7  worst 28.1 ns  hold=true en=true
+  U34_FSM_STATE.FSM_DIN7  worst 28.1 ns  hold=true en=true
+  U140_ERR_LAT_FF2.SOF_ACT_NXT  worst 24.4 ns  hold=true en=false
+  U22_BIT_CNT.BIT_CNT_EN  worst 22.9 ns  hold=false en=true
+  U22_BIT_CNT.BIT_CNT_EN  worst 22.9 ns  hold=false en=true
+  U92_LAST_PID_REG.LPID_DIN0  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN1  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN2  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN3  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN4  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN5  worst 22.2 ns  hold=true en=true
+  U92_LAST_PID_REG.LPID_DIN6  worst 22.2 ns  hold=true en=true
+
+## MCP but endpoint not enable-gated: 2
+  U211_NOT_CRC_OUT_D1.NOT_CRC5_OUT  worst 24.3 ns  hold=false en=false
+  U211_NOT_CRC_OUT_D1.NOT_CRC16_OUT  worst 24.0 ns  hold=false en=false
+
+## undeclared source registers feeding MCP endpoints with > 1 cycle (worst arrival, #endpoints, example)
+  U31_FRNUM_CNT0:FN0                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U31_FRNUM_CNT0:FN1                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U31_FRNUM_CNT0:FN2                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U31_FRNUM_CNT0:FN3                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U32_FRNUM_CNT1:FN4                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U32_FRNUM_CNT1:FN5                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U32_FRNUM_CNT1:FN6                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U32_FRNUM_CNT1:FN7                         75.2 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U215_ACT_SEL_FF:IS_SOF_XFER                74.4 ns  x8  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D0                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D1                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D2                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D3                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D4                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D5                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D6                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U93_TX_BYTE_LAT:TX_LAT_D7                  71.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U33_FRNUM_CNT2:FN8                         70.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U33_FRNUM_CNT2:FN9                         70.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U33_FRNUM_CNT2:FN10                        70.0 ns  x6  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U154_RX_WE_FF:RX_WE_DONE                   37.2 ns  x8  e.g. U93_TX_BYTE_LAT.TX_LAT_DIN0
+  U219_BUS_SYNC_FF2:DP_SYNC                  32.4 ns  x8  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U219_BUS_SYNC_FF2:DM_SYNC                  32.4 ns  x8  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U04_DPLL_EDGE_FF:RCV_D2                    32.1 ns  x6  e.g. U11_STUFF_CNT.STUFF_LOAD_N
+  U216_FSM_LUT_REG:TX_OE                     29.7 ns  x2  e.g. U08_NRZI_FF.NRZI_TX_D_EN
+  U139_ERR_LAT_FF:ERR_CRC_LAT                26.9 ns  x8  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U139_ERR_LAT_FF:ERR_TIMEOUT_LAT            26.9 ns  x8  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U215_ACT_SEL_FF:ACTIVE_CLK_SEL             23.8 ns  x19  e.g. U11_STUFF_CNT.STUFF_LOAD_N
+  U164_EN_REG:TX_BIT_EN                      23.8 ns  x18  e.g. U97_RDLEN_D1.RDL1_D0
+  U164_EN_REG:RX_SAMPLE_EN                   23.8 ns  x18  e.g. U97_RDLEN_D1.RDL1_D0
+  U140_ERR_LAT_FF2:SOF_ACTIVE                23.1 ns  x10  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U140_ERR_LAT_FF2:ERR_STUFF_LAT             23.1 ns  x8  e.g. U216_FSM_LUT_REG.XFER_DONE_GATED
+  U201_SE0_SYNC2:SE0_NOW                     21.6 ns  x1  e.g. U209_CRC_CHK_PIPE_FF.CRC_CHK_EN
+  U216_FSM_LUT_REG:CTRL_RX_EN                20.4 ns  x1  e.g. U140_ERR_LAT_FF2.ERR_STUFF_D_MUX

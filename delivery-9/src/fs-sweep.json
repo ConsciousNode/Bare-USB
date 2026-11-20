@@ -1,0 +1,299 @@
+{
+  "stepPct": 0.05,
+  "rangePct": [
+    -1,
+    1
+  ],
+  "totalPoints": 41,
+  "passedPoints": 39,
+  "withinHalfPctPassed": true,
+  "points": [
+    {
+      "devSkewPct": -1,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.95,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.9,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.85,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.8,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.75,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.7,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.65,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.6,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.55,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.5,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.45,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.4,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.35,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.3,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.25,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.2,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.15,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.1,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": -0.05,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.05,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.1,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.15,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.2,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.25,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.3,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.35,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.4,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.45,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.5,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.55,
+      "passed": false,
+      "stage": "GET_CONFIG_DESC",
+      "reason": "RETRIES_EXHAUSTED",
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.6,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.65,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.7,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.75,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.8,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.85,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.9,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 0.95,
+      "passed": true,
+      "stage": null,
+      "reason": null,
+      "violations": 0
+    },
+    {
+      "devSkewPct": 1,
+      "passed": false,
+      "stage": "SCSI_READ",
+      "reason": "RETRIES_EXHAUSTED",
+      "violations": 0
+    }
+  ]
+}

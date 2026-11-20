@@ -1,0 +1,11 @@
+{"corner":"min","type":"hid","what":"keys100","mutant":null,"fsmMutantAddr":64} => {"result":"keys ok=true exact=100/100","viol":0,"retries":6}
+{"corner":"min","type":"hid","what":"keys100","mutant":"crc16_tap_moved","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"bit_stuff_off_by_one","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"nrzi_rx_inverted","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"turnaround_short","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"sof_missing","fsmMutantAddr":64} => {"result":"keys ok=true exact=100/100","viol":0,"retries":4}
+{"corner":"min","type":"hid","what":"keys100","mutant":"fsm_bad_next_state","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"auto_ack_late","fsmMutantAddr":64} => {"result":"enum FAIL at GET_DEVICE_DESC (RETRIES_EXHAUSTED)","viol":0}
+{"corner":"min","type":"hid","what":"keys100","mutant":"dpll_resync_disabled","fsmMutantAddr":64} => {"result":"keys ok=true exact=100/100","viol":0,"retries":6}
+{"corner":"min","type":"hid","what":"keys100","mutant":"buf_addr_carry_broken","fsmMutantAddr":64} => {"result":"keys ok=true exact=100/100","viol":0,"retries":6}
+{"corner":"min","type":"hid","what":"keys100","mutant":"reg_dec_swapped","fsmMutantAddr":64} => {"result":"enum FAIL at NO_DEVICE_ATTACHED (NO_DEVICE_ATTACHED)","viol":0}
