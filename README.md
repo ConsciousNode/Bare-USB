@@ -9,6 +9,9 @@ drivers through a small register interface.
 Everything is in simulation. A gate-level, event-driven simulator runs the chip-by-chip netlist with real part
 timings from datasheets, against a simulated thumb drive (FAT16) and a simulated keyboard.
 
+**Card name, if it works: JPUSB** ("Just Parts USB"), in honor of Jeep, the first AI Kham ever worked with,
+long before the rest of the crew.
+
 ## Status (Round 9, 2026-11-20)
 - **Works at the fast-chip (min) corner:** enumerates both devices and reads a 64 KB file **byte-perfect**, and
   types 100/100 keystrokes. 11/11 deliberately broken netlists are caught. Error injection recovers. Runs are
