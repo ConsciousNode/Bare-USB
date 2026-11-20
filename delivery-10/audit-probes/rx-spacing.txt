@@ -1,0 +1,1 @@
+corner max host -0.25% dev 0.25%: enumerate true; RX_SAMPLE_EN spacing histogram (clocks: count): {"2":3,"3":12,"4":10963,"5":2}

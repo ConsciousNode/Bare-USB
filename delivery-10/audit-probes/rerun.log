@@ -1,0 +1,11 @@
+Wrote 11 records to /tmp/r10run/results.jsonl (allPassed=false)
+  [Test 1] PASS — Closed-Box Static Scan
+  [Test 2] PASS — Positive Control for Test 1 (Planted chip.state Peek)
+  [Test 3] PASS — Differential (Closed-Box Gate-Level SIE vs Reference SIE)
+  [Test 4] FAIL — Corners & Static Timing Analysis (Min/Typ/Max, CLK_48M @ 20.781 ns)
+  [Test 5] PASS — Enumeration & Transfer (FS 64 KB FAT16 File & LS 100 Keystrokes)
+  [Test 6] PASS — Mutants That Must Fail (12 Mutants incl. MCP Source & Endpoint Off-Enable)
+  [Test 7] FAIL — Wire-Level Error Injection (Flipped CRC, 7-Ones Run, Dropped ACK)
+  [Test 8] PASS — CPU Budget (Accesses/Byte on 64 KB Read & Idle Keyboard Duty)
+  [Test 9] PASS — Determinism (Fixed Seeds, Byte-Identical Traces)
+EXIT 0

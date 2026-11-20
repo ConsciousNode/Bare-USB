@@ -1,0 +1,9 @@
+== delivery-9
+chips 209; nets read 728; top-level pins 27; undriven but read: 0
+== delivery-10
+chips 261; nets read 871; top-level pins 27; undriven but read: 5
+  RCV_D3  <- read by U165_NRZI_HOLD_MUX.2I1
+  TOGGLE_DIFF  <- read by U113_INV3.6A
+  RX_STUFF_ERR  <- read by U60_ACK_GATE.3A
+  STUFF_LOAD_N_RAW  <- read by U191_PIPE_MUX.2I1, U192_PIPE_MUX2.2I1
+  SE0_PREV_N  <- read by U150_TX_LAT_CLK_AND.2B

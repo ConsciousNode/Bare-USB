@@ -1,0 +1,35 @@
+probe10 typ: slow (source,endpoint) paths 244; valid per-path MCP 228; problems 16; worst N=3 slack 26.49 ns
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D0 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D0 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D1 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D1 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D2 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D2 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D3 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D3 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D4 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D4 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D5 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D5 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D6 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D6 23.1 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D7 25.9 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D7 23.1 ns: source not declared
+probe10 max: slow (source,endpoint) paths 455; valid per-path MCP 439; problems 16; worst N=3 slack 6.64 ns
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D0 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D0 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D1 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D1 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D2 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D2 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D3 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D3 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D4 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D4 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D5 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D5 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D6 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D6 37.2 ns: source not declared
+  U121_STUFF_LAT_FF:LAT_PID_NOW_N -> U93_TX_BYTE_LAT.D7 41.7 ns: source not declared
+  U154_RX_WE_FF:RX_WE_DONE -> U93_TX_BYTE_LAT.D7 37.2 ns: source not declared
+slow paths 455; over N=2 limit: 44 (e.g. U21_RX_SR:RX_D0 -> U22_BIT_CNT.BIT_CNT_LOAD_N 53.2 ns); over N=3 limit: 0
