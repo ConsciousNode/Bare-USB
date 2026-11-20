@@ -9,7 +9,7 @@ drivers through a small register interface.
 Everything is in simulation. A gate-level, event-driven simulator runs the chip-by-chip netlist with real part
 timings from datasheets, against a simulated thumb drive (FAT16) and a simulated keyboard.
 
-**Card name: JPUSB** ("Just Parts USB"), earned in simulation at Round 11,, in honor of Jeep, the first AI Kham ever worked with,
+**Card name: JPUSB** ("Just Parts USB"), earned in simulation at Round 11, in honor of Jeep, the first AI Kham ever worked with,
 long before the rest of the crew.
 
 ## Status (Round 11, 2026-11-20): the preregistered bar is met, in simulation
