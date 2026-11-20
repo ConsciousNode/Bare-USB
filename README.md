@@ -9,18 +9,19 @@ drivers through a small register interface.
 Everything is in simulation. A gate-level, event-driven simulator runs the chip-by-chip netlist with real part
 timings from datasheets, against a simulated thumb drive (FAT16) and a simulated keyboard.
 
-**Card name, if it works: JPUSB** ("Just Parts USB"), in honor of Jeep, the first AI Kham ever worked with,
+**Card name: JPUSB** ("Just Parts USB"), earned in simulation at Round 11,, in honor of Jeep, the first AI Kham ever worked with,
 long before the rest of the crew.
 
-## Status (Round 9, 2026-11-20)
-- **Works at the fast-chip (min) corner:** enumerates both devices and reads a 64 KB file **byte-perfect**, and
-  types 100/100 keystrokes. 11/11 deliberately broken netlists are caught. Error injection recovers. Runs are
-  deterministic.
-- **Not yet at the slow-chip (max) corner.** One transmit chain is still about 80 ns of logic in a single 20.8 ns
-  clock, and the multicycle-path declarations used to close timing don't hold up (see `AUDIT-9.md`).
-- Round 10 asks for real pipelining (`ROUND10-MESSAGE.md`).
-
-**So: not a working design yet, and not a dead end either.** It's a named list of paths that need fixing.
+## Status (Round 11, 2026-11-20): the preregistered bar is met, in simulation
+- **Works at both chip-speed corners (min and max), and our independent audit agrees** (`AUDIT-11.md`): enumerates a
+  full-speed thumb drive and a low-speed keyboard, reads a 64 KB FAT16 file **byte-perfect**, takes **100/100**
+  keystrokes, and recovers from a corrupted CRC, a bit-stuffing error and a dropped handshake.
+- Timing closes at the slow corner with every multicycle path declared and proven one by one, bit intervals never
+  shorter than 3 clocks, the packet-buffer SRAMs timed (reads in STA, writes against the datasheet), one declared
+  false path with a dynamic proof, and every net driven exactly once.
+- 12/12 deliberately broken netlists are caught, at the fast corner (their suite) and the slow one (our rerun).
+- **Not done yet:** the analog line is modeled, not measured; it isn't joined to the Triton card computer yet; no
+  board has been built. Next is integration onto the I/O card, then KiCad, then the bench.
 
 ## How it's made
 The netlists are built by an outside model (Google Gemini: "Argon", later "Neon") from specs we write. Every

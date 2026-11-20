@@ -1,0 +1,15 @@
+baselines at max: msc true hid true skew true
+  crc16_tap_moved: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  bit_stuff_off_by_one: killed (SCSI_READ: RETRIES_EXHAUSTED)
+  nrzi_rx_inverted: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  turnaround_short: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  sof_missing: killed (IDLE_KEEPALIVE: DEVICE_SUSPENDED_NO_SOF)
+  fsm_bad_next_state: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  auto_ack_late: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  dpll_resync_disabled: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  buf_addr_carry_broken: killed (COMPLETE: null)
+  reg_dec_swapped: killed (ENUMERATION: NO_DEVICE_ATTACHED)
+  mcp_source_changes_off_enable: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+  mcp_endpoint_captures_off_enable: killed (GET_DEVICE_DESC: RETRIES_EXHAUSTED)
+mutants at max: 12/12 killed
+EXIT 0

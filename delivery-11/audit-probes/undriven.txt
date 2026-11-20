@@ -1,0 +1,1 @@
+chips 260; nets read 866; top-level pins 27; undriven but read: 0

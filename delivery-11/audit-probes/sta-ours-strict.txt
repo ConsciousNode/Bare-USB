@@ -1,0 +1,4 @@
+STA (strict: sync arcs only) typ corner, period 20.781 ns (host skew +0.25%): 259 CLK_48M endpoints, 30 with negative slack; combinational loops seen: 0
+   -15.07 ns  U22_BIT_CNT.BIT_CNT_LOAD_N  arrival 33.35: U21_RX_SR(launch) > U21_RX_SR>RX_D0 > U90_RX_SYNC_OR>RX_Z01 > U90_RX_SYNC_OR>RX_Z03 > U99_LEN_CMP_OR2>RX_Z05 > U120_GLUE_OR4>RX_Z06 > U113_INV3>RX_Z06_N > U91_RX_SYNC_AND>RX_ACTIVE > U128_INV5>RX_ACTIVE_
+STA (strict: sync arcs only) max corner, period 20.781 ns (host skew +0.25%): 259 CLK_48M endpoints, 64 with negative slack; combinational loops seen: 0
+   -34.92 ns  U22_BIT_CNT.BIT_CNT_LOAD_N  arrival 53.20: U21_RX_SR(launch) > U21_RX_SR>RX_D0 > U90_RX_SYNC_OR>RX_Z01 > U90_RX_SYNC_OR>RX_Z03 > U99_LEN_CMP_OR2>RX_Z05 > U120_GLUE_OR4>RX_Z06 > U113_INV3>RX_Z06_N > U91_RX_SYNC_AND>RX_ACTIVE > U128_INV5>RX_ACTIVE_

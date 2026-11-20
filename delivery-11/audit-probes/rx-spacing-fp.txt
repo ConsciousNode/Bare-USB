@@ -1,0 +1,1 @@
+corner max host -0.25% dev 0.25%: enumerate true; RX_SAMPLE_EN spacing histogram (clocks: count): {"3":12,"4":10960,"5":2,"6":3} ; RX_WE_PULSE cycles 58 ; overlaps: with S_TX_DATA 0 , with TX_LAT_EN (U93 capture) 0 , with free-running TX_BIT_EN 13
