@@ -1,0 +1,12 @@
+  BD's combinational cone: 32 nets (TX_PAY_D0 TX_PAY_D1 TX_PAY_D2 TX_PAY_D3 TX_PAY_D4 TX_PAY_D5 TX_PAY_D6 TX_PAY_D7 TX_LAT_DIN0 TX_LAT_DIN1 ...)
+JPUSB cross-check (msc, min corner): Neon's workload {"enumerated":true,"sector":true}; 4.490 ms simulated in 153 s
+  215,506 edges, 205,065 compared x 1109 shared nets, 10,441 skipped (within 40 ns of an async change); 661,737 settles on our side
+  BD not compared at 0 edges in buffer write windows (finding 1's fix; WRITEPATH=neon for Neon's drawing)
+  mismatches: 0
+  floating in our model at a compare (Neon holds the last value): 8 nets FL_D0 x205064, FL_D1 x205064, FL_D2 x205064, FL_D3 x205064, FL_D4 x205064, FL_D5 x205064, FL_D6 x205064, FL_D7 x205064
+  clocked reads of a floating net: 0 
+  FSM addresses visited (Neon's side): 194; Test 6's pick: 0x82
+
+real	2m32.859s
+user	2m31.331s
+sys	0m0.406s
