@@ -12,7 +12,18 @@ timings from datasheets, against a simulated thumb drive (FAT16) and a simulated
 **Card name: JPUSB** ("Just Parts USB"), earned in simulation at Round 11, in honor of Jeep, the first AI Kham ever worked with,
 long before the rest of the crew.
 
-## Status (Round 11, 2026-11-20): the preregistered bar is met, in simulation
+## Status (2026-11-24)
+- **Round 12 (2026-11-22) meets its bar too** (`AUDIT-12.md`). It swapped in bus-hold transceivers and multiplexers
+  so no bus is ever left floating, and the simulator now models three-state buses honestly: a floating net is reported
+  the moment anything reads it, and contention is timed. Measured: no floating reads and no contention, at both chip
+  corners.
+- **It's on its way into the card computer.** Round 12's netlist, translated chip for chip into the card computer's
+  part library (`Triton-card-computer/jpusb/`), runs beside Neon's own simulator and matches on every shared net
+  before every 48 MHz edge, on both workloads. Next is placing it in the machine as its own card, JPUSB, and wiring
+  it onto the backplane. It's treated as an untrusted peripheral: it fills its own buffer, and never writes the
+  machine's main memory.
+
+## Round 11 (2026-11-20): the preregistered bar is met, in simulation
 - **Works at both chip-speed corners (min and max), and our independent audit agrees** (`AUDIT-11.md`): enumerates a
   full-speed thumb drive and a low-speed keyboard, reads a 64 KB FAT16 file **byte-perfect**, takes **100/100**
   keystrokes, and recovers from a corrupted CRC, a bit-stuffing error and a dropped handshake.
@@ -20,8 +31,8 @@ long before the rest of the crew.
   shorter than 3 clocks, the packet-buffer SRAMs timed (reads in STA, writes against the datasheet), one declared
   false path with a dynamic proof, and every net driven exactly once.
 - 12/12 deliberately broken netlists are caught, at the fast corner (their suite) and the slow one (our rerun).
-- **Not done yet:** the analog line is modeled, not measured; it isn't joined to the Triton card computer yet; no
-  board has been built. Next is integration onto the I/O card, then KiCad, then the bench.
+- **Not done yet:** the analog line is modeled, not measured, and no board has been built. (The plan has since
+  moved: JPUSB becomes its own card rather than riding on the I/O card. See the status above.)
 
 ## How it's made
 The netlists are built by an outside model (Google Gemini: "Argon", later "Neon") from specs we write. Every
@@ -40,14 +51,14 @@ Wrong turns are kept, ours included. `AUDIT-9.md`'s "Our side" section is a spec
 ## Layout
 - `SPEC.md`, `PARTS.md`, `TIMING-BUDGET.md`, `IO-NOTES.md`: the original spec and its delay data. `v2/` is the
   closed-netlist rework.
-- `PREREG.md`, `PREREG-v3-addendum.md`, `PREREG-v4-addendum.md`: what counts as success, written in advance.
+- `PREREG.md` and its addenda (v3 to v6): what counts as success, written in advance.
 - `ROUND*-MESSAGE.md`: each request exactly as sent. `ROUND8-REDRAFT-not-sent.md` is a draft that was superseded.
 - `delivery-N/`: each delivery as received, with `audit-probes/` where we wrote our own checks.
 - `AUDIT-N.md`: the audit of each delivery. `ARRIVED-N.md`: hashes on arrival.
 
 ## Running a delivery
 ```
-cd delivery-9/src
+cd delivery-12/src
 node scripts/run-tests.js     # about 11 minutes; writes results.jsonl and REPORT.md
 ```
 
